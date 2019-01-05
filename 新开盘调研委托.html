@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--本页面CSS↓-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--框架↓-->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <!--日历-->
+    <script src="js/date.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo1.png" class="index_logo">梵猫科技房地产调研委托平台
+    <div class="right_top">
+        <i class="icon iconfont icon-zhanghuffffffpx"></i>欢迎，系统管理员
+        <a href="#"><i class="icon iconfont icon-tuichu"></i>退出</a>
+    </div>
+</header>
+<section class="investigator_box">
+    <div class="investigator_left">
+        <ul class="nav_list">
+            <li><a href="#"><i class="icon iconfont icon-fangzi"></i>首页</a></li>
+            <li class="nav_active"><a href="#"><i class="icon iconfont icon-weituoweixuanzhong" style="font-size: 21px;"></i>我要委托</a></li>
+            <p class="two_active"><a href="#"><i class="icon iconfont icon-youjiantou"></i>新开盘调研委托</a></p>
+            <p><a href="#"><i class="icon iconfont icon-youjiantou"></i>自定义调研委托</a></p>
+            <li><a href="#"><i class="icon iconfont icon-wode"></i>我的委托</a><span>13</span></li>
+        </ul>
+    </div>
+    <div class="investigator_right">
+
+        <h3 class="inves_title">新开盘调研系统模板</h3>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">项目基本信息</td>
+            </tr>
+            <tr>
+                <td>项目名称</td>
+                <td>北京壹号院</td>
+                <td>开发商</td>
+                <td>中粮万科房地产开发有限公司</td>
+            </tr>
+            <tr>
+                <td>项目类型</td>
+                <td>住宅项目</td>
+                <td>项目地址</td>
+                <td>长阳镇京良路南侧(京港澳高速19B出口，长阳环岛东行约3公里)</td>
+            </tr>
+            <tr>
+                <td>所属区域</td>
+                <td>三里屯</td>
+                <td>售楼地址</td>
+                <td>北京朝阳农业展览馆31号平房</td>
+            </tr>
+            <tr>
+                <td>所属板块</td>
+                <td>朝阳公园板块</td>
+                <td>拿地时间</td>
+                <td>2013-09-04</td>
+            </tr>
+            <tr>
+                <td>环线位置</td>
+                <td>三环至四环</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">规划信息</td>
+            </tr>
+            <tr>
+                <td>占地面积</td>
+                <td>10000m2</td>
+                <td>总户数</td>
+                <td>3100</td>
+            </tr>
+            <tr>
+                <td>建筑面积</td>
+                <td>250000m2</td>
+                <td>车位数</td>
+                <td>3600</td>
+            </tr>
+            <tr>
+                <td>容积率</td>
+                <td>2.5</td>
+                <td>建筑类型</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>绿化率</td>
+                <td>2.5</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">供应商信息</td>
+            </tr>
+            <tr>
+                <td>策划代理公司</td>
+                <td>北京中原房地产经纪有限公司</td>
+                <td>景观设计单位</td>
+                <td>贝尔高林国际(香港)有限公司</td>
+            </tr>
+            <tr>
+                <td>物业管理公司</td>
+                <td>高力国际物业公司</td>
+                <td>建筑设计单位</td>
+                <td>中建二局</td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">物业产品信息</td>
+            </tr>
+            <tr>
+                <td>物业类型</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>项目包含物业形态</td>
+                <td class="choose_td">全选</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check" ></span>住宅</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>洋房</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>联排别墅</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>叠拼别墅</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>双拼别墅</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>商业公寓</em>
+                </td>
+            </tr>
+            <tr>
+                <td>装修情况</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">周边配套设施</td>
+            </tr>
+            <tr>
+                <td>最近公交站点</td>
+                <td>长阳站  </td>
+                <td>直线距离</td>
+                <td>60米</td>
+            </tr>
+            <tr>
+                <td>最近地铁/轻轨站点</td>
+                <td>长阳站  </td>
+                <td>直线距离</td>
+                <td>420米</td>
+            </tr>
+            <tr>
+                <td>幼儿园</td>
+                <td>红黄蓝幼儿园</td>
+                <td>直线距离</td>
+                <td>60米</td>
+            </tr>
+            <tr>
+                <td>中学</td>
+                <td>北京第四中学</td>
+                <td>直线距离</td>
+                <td>420米</td>
+            </tr>
+            <tr>
+                <td>医院</td>
+                <td>长阳卫生院</td>
+                <td>直线距离</td>
+                <td>60米</td>
+            </tr>
+            <tr>
+                <td>超市</td>
+                <td>永辉超市</td>
+                <td>直线距离</td>
+                <td>420米</td>
+            </tr>
+            <tr>
+                <td>公园</td>
+                <td>长阳公园</td>
+                <td>直线距离</td>
+                <td>420米</td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">项目自身配套信息</td>
+            </tr>
+            <tr>
+                <td>供暖方式</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>其他配套</td>
+                <td class="choose_td">全选</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check" ></span>幼儿园</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>小学</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>中学</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>商业</em>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">预售许可证信息</td>
+            </tr>
+            <tr>
+                <td>最新获取的预售许可证编号</td>
+                <td>京房售证字(2016)79号</td>
+                <td>最新获取预售证的楼栋</td>
+                <td>5#     6#    7#    8#</td>
+            </tr>
+            <tr>
+                <td>最新获取预售证时间</td>
+                <td>2016-06</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">开盘情况</td>
+            </tr>
+            <tr>
+                <td>本次开盘楼栋号</td>
+                <td class="choose_td">
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check" ></span>5#</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>6#</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>7#</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>8#</em>
+                </td>
+                <td>销售类型</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>开盘时间</td>
+                <td class="table_time"><input placeholder="年-月-日" class="so_date tcal" type="text" name="date" value="" readonly></td>
+                <td>项目每层加价</td>
+                <td class="table_time"><input type="text" placeholder="请输入">元</td>
+            </tr>
+            <tr>
+                <td>本次开盘楼栋交房时间</td>
+                <td class="table_time"><input placeholder="年-月-日" class="so_date tcal" type="text" name="date" value="" readonly></td>
+                <td>项目首付比例</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+            </tr>
+            <tr>
+                <td>开盘次数</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+                <td>贷款形式</td>
+                <td class="choose_td">
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check" ></span>公积金</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>商业贷</em>
+                    <em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>组合贷</em>
+                </td>
+            </tr>
+            <tr>
+                <td>开盘地点</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+                <td>选房形式</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>优惠方式</td>
+                <td colspan="3" class="table_time"><span>全款优惠<input type="text" placeholder="请输入"></span>
+                    <span>贷款优惠<input type="text" placeholder="请输入"></span>
+                    <span>渠道优惠<input type="text" placeholder="请输入"></span></td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">推售及去化</td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="vertical-align: middle">户型图</td>
+                <td rowspan="4" style="vertical-align: middle;">
+                    <div class="kaip_div">
+                        主力户型1<input class="shangc_btn" type="image" src="images/tp.png" style="vertical-align: middle;margin-left: 10px;" />
+                    </div>
+                </td>
+                <td>推出主力户型</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+            </tr>
+            <tr>
+                <td>推出面积</td>
+                <td class="table_time"><input type="text" placeholder="请输入">m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>推出套数</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+            </tr>
+            <tr>
+                <td>去化套数</td>
+                <td class="table_time"><input type="text" placeholder="请输入">去化率50%</td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="6">客群信息</td>
+            </tr>
+            <tr>
+                <td>到访客户组数</td>
+                <td><select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select></td>
+                <td>到访人数</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+                <td>当日车流</td>
+                <td class="table_time"><input type="text" placeholder="请输入"></td>
+            </tr>
+            <tr>
+                <td>购房客群</td>
+                <td colspan="5" class="table_time"><span>刚需比例<input type="text" placeholder="请输入"></span>
+                    <span>改善比例<input type="text" placeholder="请输入"></span>
+                    <span>自住比例<input type="text" placeholder="请输入"></span>
+                    <span>投资比例<input type="text" placeholder="请输入"></span>
+                    <span>本市比例<input type="text" placeholder="请输入"></span>
+                    <span>外来比例<input type="text" placeholder="请输入"></span></td>
+            </tr>
+            <tr>
+                <td>客户描述</td>
+                <td colspan="5" class="table_time">
+                    <textarea>请输入</textarea>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">样板间照片</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="vertical-align: middle">样板间1户型</td>
+                <td class="table_time"><div class="kaip_div">室<select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select>
+                </div>
+                    <div class="kaip_div">
+                        <span style="width:auto;padding-right: 15px;">厅</span><select class="weit_set">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:auto;padding-right: 15px;">厨</span><select class="weit_set">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:auto;padding-right: 15px;">卫</span><select class="weit_set">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:auto;padding-right: 15px;">面积：</span><input class="w155_inp" type="text" placeholder="请输入">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background: #fff;"><div class="kaip_div">
+                    <span style="width:55px;padding-right:10px;line-height:150px;margin-left: 25px;">客 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">餐 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">主 卧</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">书 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:110px;">　</span>
+                        <span style="width:55px;padding-right:10px;line-height:150px;">次卧1</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">次卧2</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">厨 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:55px;padding-right:10px;line-height:150px;">卫生间</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-bordered jianjie_table">
+            <tr>
+                <td colspan="4">现场照片</td>
+            </tr>
+            <tr>
+                <td>开盘前</td>
+                <td>
+                    <div class="kaip_div">
+                        <span style="width:110px;">开盘前</span>开盘媒体图片<input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div2">
+                        <span style="width:auto;padding-right: 15px;">图片说明</span><textarea class="wt_are2">请输入</textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>现场照片</td>
+                <td>
+                    <div class="kaip_div">
+                        <span style="width:110px;"></span>
+                        <span style="width:90px;padding-right:10px;padding-top:10px;">项目沙盘</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:105px;padding-right:10px;padding-top:10px;">项目在售户型销控图</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:90px;padding-right:10px;padding-top:10px;">当天洽谈区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:90px;padding-right:10px;padding-top:10px;">等候区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:105px;padding-right:10px;padding-top:10px;">签约区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                    <div class="kaip_div">
+                        <span style="width:90px;padding-right:10px;padding-top:10px;">其他照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="tj_btn"><a class="blue_btn open_tca" href="#">使用系统模板并开始委托</a></div>
+    </div>
+</section>
+<script src="js/checkbox.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--本页面CSS↓-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--框架↓-->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<!--切换↓-->
+<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo1.png" class="index_logo">梵猫科技房地产调研委托平台
+        <div class="right_top">
+            <i class="icon iconfont icon-zhanghuffffffpx"></i>欢迎，系统管理员
+            <a href="#"><i class="icon iconfont icon-tuichu"></i>退出</a>
+        </div>
+    </header>
+    <section class="investigator_box">
+        <div class="investigator_left">
+            <div class="avatar_box">
+                <img src="images/avatar.png">
+                <span class="renzheng">已认证</span>
+                <span>安以轩</span>
+            </div>
+            <ul class="nav_list">
+                <li><a href="#"><i class="icon iconfont icon-fangzi"></i>首页</a></li>
+                <li class="nav_active"><a href="#"><i class="icon iconfont icon-xiangmuxiaoxi"></i>我参与的项目</a></li>
+                <li><a href="#"><i class="icon iconfont icon-iconfontzhizuobiaozhun023110"></i>我的消息</a></li>
+            </ul>
+        </div>
+        <div class="investigator_right">            
+		<div class="jd_box_table">
+            	<ul class="jishu_qh">
+					<li><a href="#table_1">调研消息</a></li>
+                    <li><a href="#table_2">账户消息</a></li>
+                </ul>
+				<div id="table_1">
+					<dl class="xiaox_dl xiaox_dl2">
+						<dt><a href="#">承接项目紫爵天禄调研，项目酬劳50元，调研截止日期为2018-10-15。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">承接项目紫爵天禄调研，项目酬劳50元，调研截止日期为2018-10-15。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">承接项目紫爵天禄调研，项目酬劳50元，调研截止日期为2018-10-15。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">承接项目紫爵天禄调研，项目酬劳50元，调研截止日期为2018-10-15。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">承接项目紫爵天禄调研，项目酬劳50元，调研截止日期为2018-10-15。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+                </div>
+                <div id="table_2">
+					<dl class="xiaox_dl xiaox_dl2">
+						<dt><a href="#">您于2018-10-1  15：23     提交的实名认证信息已通过审核。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">您于2018-10-1  15：23     提交的实名认证信息已通过审核。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">您于2018-10-1  15：23     提交的实名认证信息已通过审核。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">您于2018-10-1  15：23     提交的实名认证信息已通过审核。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+					<dl class="xiaox_dl">
+						<dt><a href="#">您于2018-10-1  15：23     提交的实名认证信息已通过审核。</a></dt>
+						<dd><i class="icon iconfont icon-shijian1"></i>2018-10-1  15：23</dd>
+					</dl>
+                </div>
+          </div>
+	<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+    $('.jd_box_table').tabslet({
+	  mouseevent: 'click',
+	  attribute: 'href',
+	  animation: true
+	});
+	});
+    </script>
+            
+        </div>
+    </section>
+</body>
+</html>

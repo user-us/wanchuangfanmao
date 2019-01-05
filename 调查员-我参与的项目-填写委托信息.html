@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--本页面CSS↓-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--框架↓-->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<!--日历-->
+	<script src="js/date.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" class="index_logo">梵猫科技房地产调研委托平台
+        <div class="right_top">
+            <i class="icon iconfont icon-zhanghuffffffpx"></i>欢迎，系统管理员
+            <a href="#"><i class="icon iconfont icon-tuichu"></i>退出</a>
+        </div>
+    </header>
+    <section class="investigator_box">
+        <div class="investigator_left">
+            <div class="avatar_box">
+                <img src="images/avatar.png">
+                <span class="renzheng">已认证</span>
+                <span>安以轩</span>
+            </div>
+            <ul class="nav_list">
+                <li><a href="#"><i class="icon iconfont icon-fangzi"></i>首页</a></li>
+                <li class="nav_active"><a href="#"><i class="icon iconfont icon-xiangmuxiaoxi"></i>我参与的项目</a></li>
+                <li><a href="#"><i class="icon iconfont icon-iconfontzhizuobiaozhun023110"></i>我的消息</a></li>
+            </ul>
+        </div>
+        <div class="investigator_right">
+			<ul class="weit_top">
+				<li><img src="images/icon1.png" />项目名称：<strong>紫爵天禄</strong></li>
+				<li><img src="images/icon2.png" />调研类型：<strong>新开盘调研</strong></li>
+				<li><img src="images/icon3.png" />调研酬劳：<strong>50元</strong></li>
+				<li><img src="images/icon4.png" />调研截止日期：<strong>2018-09-15</strong></li>
+			</ul>
+			<h3 class="inves_title">新开盘调研系统模板</h3>
+			<h4 class="weit_xbt">项目基本信息</h4>
+			<form class="weit_box">
+				<ul>
+					<li><span>项目名称</span><input type="text" placeholder="请输入"></li>
+					<li><span>项目类型</span><input type="text" placeholder="请输入"></li>
+					<li><span>所属区域</span><input type="text" placeholder="请输入"></li>
+					<li><span>所属板块</span><input type="text" placeholder="请输入"></li>
+					<li><span>环线位置</span><input type="text" placeholder="请输入"></li>
+					<li><span>开发商</span><input type="text" placeholder="请输入"></li>
+					<li><span>项目地址</span><input type="text" placeholder="请输入"></li>
+					<li><span>售楼地址</span><input type="text" placeholder="请输入"></li>
+					<li><span>拿地时间</span><input type="text" placeholder="请输入"></li>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">规划信息</h4>
+			<form class="weit_box">
+				<ul>
+					<li><span>占地面积</span><input type="text" placeholder="请输入">㎡</li>
+					<li><span>建筑面积</span><input type="text" placeholder="请输入">㎡</li>
+					<li><span>容积率</span><input type="text" placeholder="请输入"></li>
+					<li><span>绿化率</span><input type="text" placeholder="请输入"></li>
+					<li><span>总户数</span><input type="text" placeholder="请输入"></li>
+					<li><span>车位数</span><input type="text" placeholder="请输入"></li>
+					<li><span>建筑类型</span><input type="text" placeholder="请输入"></li>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">供应商信息</h4>
+			<form class="weit_box weit_box2">
+				<ul>
+					<li><span>策划代理公司</span><input type="text" placeholder="请输入"></li>
+					<li><span>物业管理公司</span><input type="text" placeholder="请输入"></li>
+					<li><span>景观设计单位</span><input type="text" placeholder="请输入"></li>
+					<li><span>建筑设计单位</span><input type="text" placeholder="请输入"></li>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">物业产品信息</h4>
+			<form class="weit_box weit_box3">
+				<ul>
+					<li><span>物业类型</span><input type="text" placeholder="请输入"></li>
+					<li class="checkbox"><span style="width:130px;">项目包含物业形态</span>
+						<em><span class="check_span"><input type="checkbox" class="a1" id="a1" onclick="checks('a1','a1check')"></span>全选</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check" ></span>住宅</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>洋房</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>联排别墅</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>叠拼别墅</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>双拼别墅</em>
+						<em><span class="check_span"><input type="checkbox" class="a1" name="a1check"></span>商业公寓</em>
+					</li>
+					<li><span>装修情况</span><select class="weit_set">
+						  <option value="请选择">请选择</option>
+						</select>
+					</li>
+					<li><span>住宅建筑类型</span><select class="weit_set">
+						  <option value="请选择">请选择</option>
+						</select>
+					</li>
+				</ul>
+        	</form>
+
+			<h4 class="weit_xbt">周边配套设施</h4>
+			<form class="weit_box weit_box5">
+				<ul>
+					<li>
+						<p><span>最近公交站点</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+					<li>
+						<p><span>最近地铁/轻轨站点</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+					<li>
+						<p><span>幼儿园</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+					<li>
+						<p><span>超市</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+					<li>
+						<p><span>医院</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+					<li>
+						<p><span>公园</span><input type="text" placeholder="请输入"></p>
+						<p><span>直线距离</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+					</li>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">项目自身配套信息</h4>
+			<form class="weit_box">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td valign="top">
+							<li style="width:100%;"><span>供暖方式</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+							</li>
+						  </td>
+						  <td>
+							<li style="width:100%;" class="checkbox"><span style="width:90px;">其他配套</span>
+								<em><span class="check_span"><input type="checkbox"></span>幼儿园</em>
+								<em><span class="check_span"><input type="checkbox"></span>小学</em>
+								<em><span class="check_span"><input type="checkbox"></span>中学</em>
+								<em><span class="check_span"><input type="checkbox"></span>商业</em>
+							</li>
+							  <li style="width:100%;">
+								<p class="left"><span>幼儿园</span><input type="text" placeholder="请输入"></p>
+								<p><span style="text-align:right;">体量　</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+							</li>
+							  <li style="width:100%;">
+								<p class="left"><span>小学</span><input type="text" placeholder="请输入"></p>
+								<p><span style="text-align:right;">体量　</span><input class="zhix_text" type="text" placeholder="请输入">m</p>
+							</li>
+						</td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">预售许可证信息</h4>
+			<form class="weit_box weit_box2">
+				<ul>
+					<li><span style="width:200px;">最新获取的预售许可证编号</span><input type="text" placeholder="请输入"></li>
+					<li><span style="width:160px;">最新获取预售证时间</span><input type="text" placeholder="请输入"></li>
+					<li><span style="width:200px;">最新获取预售证的楼栋</span><span class="weit_set2">多选1——100号楼</span></li>
+				</ul>
+				
+        	</form>
+        	<!--弹窗-->
+			    <div class="dialog">
+			    	<i class="icon iconfont icon-ego-guanbi close"></i>
+			    	<p class="tantit">选择楼栋</p>
+			    	<ul class="tancon">
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    		<li>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    			<span><input type="checkbox"  />1#</span>
+			    		</li>
+			    	</ul>
+			    </div>
+				
+				<!--弹窗-->
+			<h4 class="weit_xbt">开盘情况</h4>
+			<form class="weit_box weit_kp">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td>
+							<li class="checkbox">
+								<div class="kaip_div">
+									<span style="width:110px;">本次开盘楼栋号</span>
+									<em><span class="check_span"><input type="checkbox"></span>#5</em>
+									<em><span class="check_span"><input type="checkbox"></span>#6</em>
+									<em><span class="check_span"><input type="checkbox"></span>#7</em>
+									<em><span class="check_span"><input type="checkbox"></span>#8</em>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">开盘时间</span>
+									<input placeholder="年-月-日" class="so_date tcal" type="text" name="date" value="" readonly>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">本次开盘楼栋交房时间</span>
+									<input placeholder="年-月-日" class="so_date tcal" type="text" name="date" value="" readonly>
+								</div>
+							</li>
+							 <li>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">5号楼</span><input class="w155_inp" type="text" placeholder="请输入">单元
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">每单元</span><input class="w155_inp" type="text" placeholder="请输入">梯
+								 </div>
+								 <div class="kaip_div">
+								 	<input class="w155_inp" type="text" placeholder="请输入">户
+								 </div>
+							 </li>
+							  <li>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">6号楼</span><input class="w155_inp" type="text" placeholder="请输入">单元
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">每单元</span><input class="w155_inp" type="text" placeholder="请输入">梯
+								 </div>
+								 <div class="kaip_div">
+								 	<input class="w155_inp" type="text" placeholder="请输入">户
+								 </div>
+							 </li>
+							  <li>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">开盘次数</span>
+                                     <select class="weit_set">
+                                        <option value="请选择">请选择</option>
+                                     </select>
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">开盘地点</span><input type="text" placeholder="请输入">
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">销售类型</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								 </div>
+							 </li>
+							  <li>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">项目每层加价</span><input class="w155_inp" type="text" placeholder="请输入">元
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">项目装修价格</span><input class="w155_inp" type="text" placeholder="请输入">元/㎡
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">设备费单价</span><input class="w155_inp" type="text" placeholder="请输入">元/㎡
+								 </div>
+							 </li>
+							  <li class="checkbox">
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">项目首付比例</span><input class="w155_inp" type="text" placeholder="请输入">
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">贷款形式：</span>
+									<em><span class="check_span"><input type="checkbox"></span>公积金</em>
+									<em><span class="check_span"><input type="checkbox"></span>商业贷</em>
+									<em><span class="check_span"><input type="checkbox"></span>组合贷</em>
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">选房形式</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								 </div>
+							 </li>
+							  <li class="checkbox">
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">优惠方式</span>全款优惠<input class="w155_inp" type="text" placeholder="请输入">
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">贷款优惠：</span><input class="w155_inp" type="text" placeholder="请输入">
+								 </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">渠道优惠</span><input class="w155_inp" type="text" placeholder="请输入">
+								 </div>
+							 </li>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">推售及去化</h4>
+			<form class="weit_box weit_kp">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td>
+							<li>
+								<div class="kaip_div">
+									<span style="width:110px;">推出主力户型1</span><input type="text" placeholder="请输入">
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">推出面积</span><input class="w155_inp" type="text" placeholder="请输入">㎡
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">推出套数</span><input class="w155_inp" type="text" placeholder="请输入">
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">去化套数</span><input class="w155_inp" type="text" placeholder="请输入">去化率50%
+								</div>
+								<button class="jianc"><img src="images/jianc.png" width="23" height="23" alt=""/></button>
+								<button class="jianc"><img src="images/jia.png" width="23" height="23" alt=""/></button>
+						     </li>
+							 <li>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">户型图</span>主力户型1<input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">主力户型2</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">主力户型3</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">客群信息</h4>
+			<form class="weit_box weit_kp">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td>
+							<li>
+								<div class="kaip_div">
+									<span style="width:110px;">到访客户组数</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">到访人数</span><input class="w155_inp" type="text" placeholder="请输入">
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">当日车流</span><input class="w155_inp" type="text" placeholder="请输入">
+								</div>
+						     </li>
+							 <li>
+								 <div class="kaip_div">
+								 	<span style="width:110px;padding-right: 15px;">购房客群</span>刚需比例：<input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">改善比例：</span><input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">自住比例：</span><input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+						    </li>
+							  <li>
+								 <div class="kaip_div">
+								 	<span style="width:110px;padding-right: 15px;">　　　　</span>投资比例：<input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">本市比例：</span><input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:auto;padding-right: 15px;">外来比例：</span><input class="w155_inp" type="text" placeholder="请输入">
+						         </div>
+						    </li>
+							<li>
+								 <span style="width:110px;padding-right: 15px;">客户描述</span>
+								　<textarea class="wt_are">请输入</textarea>
+						    </li>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">样板间照片</h4>
+			<form class="weit_box weit_kp">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td>
+							<li>
+								<div class="kaip_div">
+									<span style="width:110px;">样板间1户型</span>室<select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">厅</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">厨</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">卫</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">面积：</span><input class="w155_inp" type="text" placeholder="请输入">
+								</div>
+						     </li>
+							 <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">　　　　　　</span>
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">客 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">餐 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">主 卧</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">书 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+							  <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">　</span>
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">次卧1</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">次卧2</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">厨 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">卫生间</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<li>
+								<div class="kaip_div">
+									<span style="width:110px;">样板间2户型</span>室<select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">厅</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">厨</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">卫</span><select class="weit_set">
+								  <option value="请选择">请选择</option>
+								</select>
+								</div>
+								<div class="kaip_div">
+									<span style="width:auto;padding-right: 15px;">面积：</span><input class="w155_inp" type="text" placeholder="请输入">
+								</div>
+						     </li>
+							 <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">　　　　　　</span>
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">客 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">餐 厅</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">主 卧</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">书 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+							  <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">　</span>
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">次卧1</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">次卧2</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">厨 房</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:55px;padding-right:10px;line-height:150px;">卫生间</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<h4 class="weit_xbt">现场照片</h4>
+			<form class="weit_box weit_kp">
+				<ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tbody>
+						<tr>
+						  <td>
+							<li>
+								<div class="kaip_div">
+									<span style="width:110px;">开盘前</span>开盘媒体图片<input class="shangc_btn" type="image" src="images/tp.png" />
+								</div>
+								<div class="kaip_div2">
+									<span style="width:auto;padding-right: 15px;">图片说明</span><textarea class="wt_are2">请输入</textarea>
+								</div>
+						     </li>
+							 <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">现场照片</span>
+								 	<span style="width:90px;padding-right:10px;padding-top:10px;">项目沙盘</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:105px;padding-right:10px;padding-top:10px;">项目在售户型销控图</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:90px;padding-right:10px;padding-top:10px;">当天洽谈区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+							  <li>
+								 <div class="kaip_div">
+									<span style="width:110px;">　</span>
+								 	<span style="width:90px;padding-right:10px;padding-top:10px;">等候区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:105px;padding-right:10px;padding-top:10px;">签约区照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+								 <div class="kaip_div">
+								 	<span style="width:90px;padding-right:10px;padding-top:10px;">其他照片</span><input class="shangc_btn" type="image" src="images/tp.png" />
+						         </div>
+						    </li>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</ul>
+        	</form>
+			<div class="tj_btn"><a href="#" class="lvse_btn">保存当前数据</a><a class="blue_btn open_tca" href="#">填写完成</a></div>
+      </div>
+    </section>
+			<script src="js/checkbox.min.js"></script>
+<!--弹出层-->
+<div class="tc_box">
+  <div class="tc_box_con">
+	<div class="hd_tcbt1">提现<span class="close_tc"><img src="images/close.png"/></span></div>
+	<p class="hd_tssm1"><img src="images/tb2.png" />请确保所有数据填写完整，提交将进入审核环节。</p>
+	<p class="hd_btns"><a href="#" class="tc_btn">确认提交</a><a href="#" class="tc_huangbtn">返回修改</a></p>
+  </div>
+</div>
+
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$('.open_tca').click(function(){
+		$('.tc_box').show();
+		});
+	$('.close_tc,.tc_btn').click(function(){
+		$('.tc_box').hide();
+		});
+	});
+</script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		  $(".weit_set2").click(function(){
+	      var length=document.documentElement.scrollTop;
+	      $(".dialog").show();
+	      })   
+	      $(".close").click(function(){$(".dialog").hide();});   
+	})
+</script>
+</body>
+</html>

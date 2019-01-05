@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--本页面CSS↓-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--框架↓-->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <!--日历-->
+    <script src="js/date.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo1.png" class="index_logo">梵猫科技房地产调研委托平台
+    <div class="right_top">
+        <i class="icon iconfont icon-zhanghuffffffpx"></i>欢迎，系统管理员
+        <a href="#"><i class="icon iconfont icon-tuichu"></i>退出</a>
+    </div>
+</header>
+<section class="investigator_box">
+    <div class="investigator_left">
+        <div class="avatar_box">
+            <img src="images/avatar.png">
+            <span class="renzheng">已认证</span>
+            <span>安以轩</span>
+        </div>
+        <ul class="nav_list">
+            <li><a href="#"><i class="icon iconfont icon-fangzi"></i>首页</a></li>
+            <li class="nav_active"><a href="#"><i class="icon iconfont icon-xiangmuxiaoxi"></i>我参与的项目</a></li>
+            <li><a href="#"><i class="icon iconfont icon-iconfontzhizuobiaozhun023110"></i>我的消息</a></li>
+        </ul>
+    </div>
+    <div class="investigator_right">
+        <h3 class="inves_title">选择需要调研的项目</h3>
+        <div class="shaixuan_tj">
+            <span>省
+                <select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select>
+            </span>
+            <span>城市
+                <select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select>
+            </span>
+            <span>区域
+                <select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select>
+            </span>
+            <span>销售状态
+                <select class="weit_set">
+                    <option value="请选择">请选择</option>
+                </select>
+            </span>
+            <span class="search_wei">
+                <input type="text">
+                <a href="#">搜索</a>
+            </span>
+        </div>
+        <h4 class="weit_xbt">项目列表</h4>
+        <div class="xiangmu_list">
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+            <span><input type="radio"><label>紫爵天禄</label></span>
+        </div>
+        <h4 class="weit_xbt">已选项目</h4>
+        <table class="inves_table table-bordered">
+            <tr>
+                <th>项目名称</th>
+                <th>城市</th>
+                <th>区域</th>
+                <th>开发商</th>
+                <th>编号</th>
+            </tr>
+            <tr>
+                <td>长安太和</td>
+                <td>北京</td>
+                <td>东城区</td>
+                <td>长安房地产</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>万科西华府</td>
+                <td>北京</td>
+                <td>丰台区</td>
+                <td>万科房地产</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>北大资源博雅</td>
+                <td>成都</td>
+                <td>锦江区</td>
+                <td>北大资源</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>龙湖时代</td>
+                <td>重庆</td>
+                <td>江北区</td>
+                <td>龙湖地产</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <h4 class="weit_xbt">设置</h4>
+        <div class="shezhi_wei1">
+            <label class="shezhi_label">设置截止日期</label>
+            <select class="weit_set">
+                <option value="年">年</option>
+            </select>
+            <select class="weit_set">
+                <option value="月">月</option>
+            </select>
+            <select class="weit_set">
+                <option value="日">日</option>
+            </select>
+        </div>
+        <div>
+            <label class="shezhi_label">身份邀请</label>
+            <select class="weit_set">
+                <option value="请选择">请选择</option>
+            </select>
+        </div>
+        <div class="tj_btn"><a class="blue_btn open_tca" href="#">提交调研委托</a></div>
+    </div>
+</section>
+<script src="js/checkbox.min.js"></script>
+<!--弹出层-->
+<div class="tc_box">
+    <div class="tc_box_con">
+        <div class="hd_tcbt1">调研委托<span class="close_tc"><img src="images/close.png"/></span></div>
+        <p class="hd_tssm1"><img src="images/weituo.png" />您已成功委托调研，相关结果可前往我的委托页面查看或下载</p>
+        <p class="hd_btns"><a href="#" class="tc_btn">前往我的委托</a></p>
+    </div>
+</div>
+
+<script>
+    jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+    jQuery(document).ready(function($){
+        $('.open_tca').click(function(){
+            $('.tc_box').show();
+        });
+        $('.close_tc,.tc_btn').click(function(){
+            $('.tc_box').hide();
+        });
+    });
+</script>
+
+</body>
+</html>
